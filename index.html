@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="lightbox2-2.11.1/dist/css/lightbox.min.css">
+	<title>Document</title>
+</head>
+<style>
+	@font-face {
+		font-family: 'Pacifico';
+	}
+	*{
+	font-family: 'Pacifico', cursive;
+	}
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		background-color: lightyellow;
+		margin: 0;
+		padding: 0;
+	}
+	h1 {
+		background-color: skyblue;
+		width: 100%;	
+		text-align: center;
+		font-weight: bolder;
+		color: salmon;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+		margin: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	nav {
+		background-color: skyblue;
+		font-size: large;
+		font-weight: bolder;
+		width: 100%;
+	}
+	nav a{
+		text-decoration: none;
+		color: salmon;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+		padding: 10px;
+		margin: 10px;
+		font-family: 'Courier New', monospace;
+	}
+
+	nav a:hover {
+		font-size: larger;
+	}
+	.box {
+		display: inline-block;
+		background-color: aliceblue;
+		border: 1px solid grey;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 10px;
+		align-self: center;
+		-webkit-transition: width 15s; /* For Safari 3.1 to 6.0 */
+  		transition: width 15s;
+	}	
+	.box img:hover {
+		width: 400px;
+	}
+	footer {
+		position: fixed;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		background-color: skyblue;
+  		color: salmon;
+  		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  		text-align: center;
+  		font-family: 'Courier New', monospace;
+	}
+
+</style>
+<body>
+	<h1>MyPictures</h1>
+	<nav><a href="../index.html" title="Click aqui para voltar para a página principal." >Home</a></nav>
+
+	<div class="box"><a class="example-image-link" href="imagem/ceu.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/ceu.jpg" width="300"></a></div>
+	<div class="box"><a class="example-image-link" href="imagem/estrada.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/estrada.jpg" width="300"></a></div>
+	<div class="box"><a class="example-image-link" href="imagem/mar.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/mar.jpg" width="300"></a></div>
+	<div class="box"><a class="example-image-link" href="imagem/montanha.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/montanha.jpg" width="300"></a></div>
+	<div class="box"><a class="example-image-link" href="imagem/praia.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/praia.jpg" width="300"></a></div>
+	<div class="box"><a class="example-image-link" href="imagem/queda.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/queda.jpg" width="300"></a></div>
+	<div class="box"><a class="example-image-link" href="imagem/trem.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagem/trem.jpg" width="300"></a></div>
+	
+	<script src="lightbox2-2.11.1/dist/js/lightbox-plus-jquery.min.js"></script>
+	<footer>
+	Image from rawpixel.com
+	</footer>
+</body>
+
+</html>
